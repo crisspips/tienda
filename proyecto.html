@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex Market Sessions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Forex Market Sessions</h1>
+        <p>Check the opening and closing times of the global Forex markets.</p>
+        <p id="current-time"></p>
+        <p id="current-session"></p>
+        <p>Most active pairs: <span id="active-pairs"></span></p>
+
+        <div class="session" id="london">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/512px-Flag_of_the_United_Kingdom.svg.png" alt="UK Flag" class="flag">
+            <h2>London</h2>
+            <p>Open: 04:00 AM GMT-4</p>
+            <p>Close: 12:00 PM GMT-4</p>
+            <p class="closes-in" id="london-closes"></p>
+        </div>
+
+        <div class="session" id="new-york">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/512px-Flag_of_the_United_States.svg.png" alt="USA Flag" class="flag">
+            <h2>New York</h2>
+            <p>Open: 09:00 AM GMT-4</p>
+            <p>Close: 05:00 PM GMT-4</p>
+            <p class="closes-in" id="new-york-closes"></p>
+        </div>
+
+        <div class="session" id="sydney">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/512px-Flag_of_Australia.svg.png" alt="Australia Flag" class="flag">
+            <h2>Sydney</h2>
+            <p>Open: 06:00 PM GMT-4</p>
+            <p>Close: 02:00 AM GMT-4</p>
+            <p class="closes-in" id="sydney-closes"></p>
+        </div>
+
+        <div class="session" id="tokyo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/512px-Flag_of_Japan.svg.png" alt="Japan Flag" class="flag">
+            <h2>Tokyo</h2>
+            <p>Open: 07:00 PM GMT-4</p>
+            <p>Close: 03:00 AM GMT-4</p>
+            <p class="closes-in" id="tokyo-closes"></p>
+        </div>
+        
+        <footer>
+            <p>© 2024 Forex Sessions | All Rights Reserved</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
